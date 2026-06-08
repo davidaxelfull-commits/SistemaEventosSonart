@@ -1,0 +1,60 @@
+@model SistemaEventosSonart.Models.Cotizacion
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Cotizacion</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="SolicitudEventoId" class="control-label"></label>
+                <input asp-for="SolicitudEventoId" class="form-control" />
+                <span asp-validation-for="SolicitudEventoId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="PaqueteServicioId" class="control-label"></label>
+                <input asp-for="PaqueteServicioId" class="form-control" />
+                <span asp-validation-for="PaqueteServicioId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="FechaCotizacion" class="control-label"></label>
+                <input asp-for="FechaCotizacion" class="form-control" />
+                <span asp-validation-for="FechaCotizacion" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="EstadoCotizacion" class="control-label"></label>
+                <input asp-for="EstadoCotizacion" class="form-control" />
+                <span asp-validation-for="EstadoCotizacion" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="SolicitudEvento" class="control-label"></label>
+                <input asp-for="SolicitudEvento" class="form-control" />
+                <span asp-validation-for="SolicitudEvento" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="PaqueteServicio" class="control-label"></label>
+                <input asp-for="PaqueteServicio" class="form-control" />
+                <span asp-validation-for="PaqueteServicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

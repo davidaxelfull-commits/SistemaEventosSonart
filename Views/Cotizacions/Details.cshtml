@@ -1,0 +1,59 @@
+@model SistemaEventosSonart.Models.Cotizacion
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Cotizacion</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SolicitudEventoId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SolicitudEventoId)
+        </dd>
+    </dl>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PaqueteServicioId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PaqueteServicioId)
+        </dd>
+    </dl>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaCotizacion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FechaCotizacion)
+        </dd>
+    </dl>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EstadoCotizacion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EstadoCotizacion)
+        </dd>
+    </dl>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SolicitudEvento)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SolicitudEvento)
+        </dd>
+    </dl>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PaqueteServicio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PaqueteServicio)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.CotizacionId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

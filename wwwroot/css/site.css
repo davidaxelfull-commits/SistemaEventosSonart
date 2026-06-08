@@ -1,0 +1,244 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+
+body {
+    background: linear-gradient(135deg, #eef2f7, #dbeafe);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #1f2937;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #0f172a !important;
+    border-bottom: 4px solid #2563eb;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.navbar .nav-link {
+    color: #e5e7eb !important;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+    .navbar .nav-link:hover {
+        color: #93c5fd !important;
+        text-decoration: none;
+    }
+
+/* Contenedor principal */
+.container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.14);
+}
+
+/* Títulos */
+h1 {
+    color: #0f172a;
+    font-weight: 800;
+    margin-bottom: 20px;
+    border-left: 6px solid #2563eb;
+    padding-left: 12px;
+}
+
+h4 {
+    color: #1d4ed8;
+    font-weight: 700;
+}
+
+/* Enlaces generales */
+a {
+    color: #1d4ed8;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #0f172a;
+        text-decoration: underline;
+    }
+
+    /* Botón crear nuevo */
+    p a[href*="Create"],
+    a[asp-action="Create"] {
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+/* Tablas */
+.table {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+    .table thead th {
+        background-color: #1e3a8a;
+        color: #ffffff;
+        text-align: center;
+        vertical-align: middle;
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .table tbody td {
+        vertical-align: middle;
+        padding: 12px;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .table tbody tr:hover {
+        background-color: #eff6ff;
+    }
+
+    /* Evita que columnas se vean demasiado pegadas */
+    .table th,
+    .table td {
+        white-space: normal;
+    }
+
+/* Botones */
+.btn {
+    border-radius: 8px;
+    font-weight: 600;
+    margin: 2px;
+}
+
+.btn-primary {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+    .btn-primary:hover {
+        background-color: #1e40af;
+        border-color: #1e40af;
+    }
+
+.btn-warning {
+    color: #111827;
+    background-color: #facc15;
+    border-color: #facc15;
+}
+
+.btn-info {
+    color: #ffffff;
+    background-color: #0284c7;
+    border-color: #0284c7;
+}
+
+.btn-danger {
+    background-color: #dc2626;
+    border-color: #dc2626;
+}
+
+    .btn-danger:hover {
+        background-color: #991b1b;
+        border-color: #991b1b;
+    }
+
+/* Formularios */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    padding: 9px;
+}
+
+    .form-control:focus {
+        border-color: #2563eb;
+        box-shadow: 0 0 0 0.15rem rgba(37, 99, 235, 0.25);
+    }
+
+/* Detalles */
+dl.row {
+    background-color: #f8fafc;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+dt {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+dd {
+    color: #374151;
+}
+
+/* Separadores */
+hr {
+    border-top: 2px solid #dbeafe;
+}
+
+/* Footer */
+.footer {
+    background-color: #0f172a;
+    color: #e5e7eb;
+    padding: 12px 0;
+}
+
+    .footer a {
+        color: #93c5fd;
+    }
+
+/* Ajuste responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 18px;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+
+    .navbar .nav-link {
+        margin-right: 0;
+    }
+}
